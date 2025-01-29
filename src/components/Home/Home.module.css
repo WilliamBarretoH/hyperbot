@@ -1,0 +1,128 @@
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.saldo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.retirar {
+    background: #FFA500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main h2 {
+    color: #333;
+}
+
+.destaque {
+    color: #FFA500;
+    font-weight: bold;
+}
+
+.saldoInicial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.instrucao {
+    font-size: 14px;
+    color: #666;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.resgatar {
+    background: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seguranca {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.homeContainer {
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+  }
+  
+  /* Centraliza o bloco das imagens */
+  .imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .leftImage, .rightImage {
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Ajustando as imagens laterais */
+  .leftImage {
+    left: -40px;
+  }
+  
+  .rightImage {
+    right: -40px;
+  }
+  
+  /* Caixa do valor R$ 100,00 */
+  .valueBox {
+    width: 180px; /* Ajuste conforme necessário */
+    height: auto;
+    z-index: 2;
+    position: relative;
+  }
+  
+  
+  
