@@ -8,12 +8,11 @@ Bem-vindo ao projeto Robô Investidor! Este é um sistema desenvolvido em React 
 
 Primeiro, você precisa clonar este repositório do GitHub para sua máquina local.
 
-# Substitua "seu-usuario" pelo nome do dono do repositório
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+- git clone https://github.com/WilliamBarretoH/hyperbot.git
 
 Entre na pasta do projeto:
 
-cd nome-do-repositorio
+cd hyperbot
 
 2️⃣ Instalar dependências
 
