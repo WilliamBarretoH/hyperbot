@@ -1,8 +1,8 @@
-📌 Projeto - Robô Investidor
+# 📌 Projeto - Robô Investidor
 
 Bem-vindo ao projeto Robô Investidor! Este é um sistema desenvolvido em React com Bootstrap, projetado para uma experiência simples e intuitiva. Este guia ajudará você a configurar e rodar o projeto localmente.
 
-🚀 Como configurar o projeto
+# 🚀 Como configurar o projeto
 
 1️⃣ Clonar o repositório
 
@@ -23,7 +23,7 @@ O projeto utiliza Node.js e npm (ou yarn) para gerenciar dependências.
 Depois de instalar, rode o seguinte comando para instalar as dependências do projeto:
 
 npm install
-# ou, se estiver usando yarn:
+### ou, se estiver usando yarn:
 yarn install
 
 3️⃣ Rodar a aplicação
