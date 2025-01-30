@@ -100,7 +100,7 @@
   }
   
   .leftImage, .rightImage {
-    width: 70px;
+    width: 120px;
     height: auto;
     position: absolute;
     top: 50%;
@@ -109,16 +109,20 @@
   
   /* Ajustando as imagens laterais */
   .leftImage {
-    left: -40px;
+    left: -60px;
+    bottom: 90%;
   }
   
   .rightImage {
-    right: -40px;
+    right: -60px;
+    top: 25%;
+    width: 140px;
+    z-index: 2;
   }
   
   /* Caixa do valor R$ 100,00 */
   .valueBox {
-    width: 180px; /* Ajuste conforme necessário */
+    width: 280px; /* Ajuste conforme necessário */
     height: auto;
     z-index: 2;
     position: relative;

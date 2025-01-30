@@ -9,6 +9,7 @@ const App = () => {
         {/* Define que "/" redireciona para "/home" */}
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
+      
       </Routes>
     </Router>
   );
