@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.limiteGanhoDiario {
+    font-size: 0.875rem; /* Tamanho base para telas maiores */
+    color: #6c757d; /* Cinza mais claro */
+    text-align: right; /* Alinha o texto à direita */
+    margin-top: 0.25rem; /* Espaçamento acima do texto */
+  }
+  
+  /* Ajustes para telas menores */
+  @media (max-width: 768px) {
+    .limiteGanhoDiario {
+      font-size: 0.75rem; /* Tamanho menor para telas médias */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .limiteGanhoDiario {
+      font-size: 0.625rem; /* Tamanho ainda menor para telas pequenas */
+    }
+  }

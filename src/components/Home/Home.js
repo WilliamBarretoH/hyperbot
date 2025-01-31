@@ -6,10 +6,13 @@ import robotIcon from "../../assets/robo-home.svg";
 import dolar from "../../assets/dolar-home.svg";
 import cemReais from "../../assets/box-cem-reais-home.svg";
 import CadastroPopup from "../CadstroPopup/CadstroPopup";
+import HeaderUser from "../HeaderUser/HeaderUser";
+import MainContainer from "../MainContainer/MainContainer";
 
 const Home = () => {
-
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [saldo, setSaldo] = useState(100.00); // Estado para o saldo
+  const [limiteGanhoDiario, setLimiteGanhoDiario] = useState(500.00); // Estado para o limite de ganho diário
 
   // Função para abrir/fechar o pop-up
   const togglePopup = (event) => {
@@ -18,18 +21,9 @@ const Home = () => {
   };
 
   return (
-    <div className="container d-flex justify-content-center align-items-center vh-100">
-      <div className={`col-12 col-md-6 p-4 position-relative ${styles.homeContainer}`}>
-        
-        <header className="d-flex justify-content-between align-items-center mb-3">
-          <div className={styles.logo}>
-            <img src={LogoR} alt="Logo" width={50} height={50}/>
-          </div>
-          <div className="d-flex align-items-center gap-2">
-            <span className="fw-bold">R$ 0,00</span>
-            <button className="btn btn-warning">RETIRAR</button>
-          </div>
-        </header>
+    <>
+      <MainContainer>
+        <HeaderUser saldo={saldo} limiteGanhoDiario={limiteGanhoDiario} />
 
         <main className="text-center">
           <h2 className="text-dark">
@@ -42,11 +36,11 @@ const Home = () => {
           {/* Container das imagens */}
           <div className={styles.imageContainer}>
             <img src={robotIcon} alt="Robô" className={styles.leftImage} />
-            <img src={cemReais} alt="R$ 100,00" className={styles.valueBox} width={550} height={250}/>
+            <img src={cemReais} alt="R$ 100,00" className={styles.valueBox} width={550} height={250} />
             <img src={dolar} alt="Emoji Dinheiro" className={styles.rightImage} />
           </div>
 
-          <p className=" text-warning">
+          <p className="text-warning">
             Você pode receber uma comissão <span className="text-warning fw-bold">de até R$ 500,00</span> após <span className="text-warning fw-bold">realizar o cadastro</span>
           </p>
 
@@ -60,11 +54,11 @@ const Home = () => {
             © Seus dados estão seguros, nada disso será compartilhado.
           </p>
         </main>
-      </div>
-      {/* Exibir pop-up quando isPopupOpen for true */}
-      {isPopupOpen && <CadastroPopup isOpen={isPopupOpen} onClose={togglePopup} />}
-    
-    </div>
+
+        {/* Exibir pop-up quando isPopupOpen for true */}
+        {isPopupOpen && <CadastroPopup isOpen={isPopupOpen} onClose={togglePopup} />}
+      </MainContainer>
+    </>
   );
 };
 

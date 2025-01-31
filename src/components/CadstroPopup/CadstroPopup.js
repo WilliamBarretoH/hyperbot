@@ -7,11 +7,6 @@ const CadastroPopup = ({ isOpen, onClose }) => {
 
   return (
     <div className={`${styles.overlay} d-flex align-items-center justify-content-center`}>
-      <div className={styles.fireworks}>
-        <div className={styles.firework}></div>
-        <div className={styles.firework}></div>
-        <div className={styles.firework}></div>
-      </div>
       <div className={`${styles.popup} p-4 text-center`}>
         <h2 className="text-success fw-bold">CADASTRO REALIZADO</h2>
         <p className="text-success display-4 fw-bold">R$ 100,00</p>

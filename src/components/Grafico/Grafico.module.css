@@ -1,0 +1,66 @@
+.container {
+    background: linear-gradient(135deg, #ffa500, #ff7f00);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 260px;
+    margin: 20px auto;
+  }
+  
+  .graficoContainer {
+    background: #fff;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    position: relative;
+    height: 150px;
+  }
+  
+  .popup {
+    position: absolute;
+    background: #2ecc71;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    animation: popup 0.3s ease-out;
+    transform: translate(-50%, -100%);
+  }
+  
+  @keyframes popup {
+    from { opacity: 0; transform: translate(-50%, -90%); }
+    to { opacity: 1; transform: translate(-50%, -100%); }
+  }
+  
+  .controls {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .botao {
+    background: linear-gradient(135deg, #ffd700, #ffa500);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  
+  .botao:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .botao:active:not(:disabled) {
+    transform: scale(0.95);
+  }
