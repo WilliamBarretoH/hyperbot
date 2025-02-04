@@ -16,3 +16,39 @@
     max-width: 90%;
   }
   
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(88, 181, 134, 0.7);
+    }
+    70% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(88, 181, 134, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(88, 181, 134, 0);
+    }
+  }
+  
+  .pulseButton {
+    animation: pulse 1.5s infinite !important;
+    transition: all 0.3s ease;
+  }
+  
+  .pulseButton:hover {
+    animation: none !important;
+    transform: scale(1.05) !important;
+  }
+  
+  /* No arquivo CadstroPopup.module.css */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
