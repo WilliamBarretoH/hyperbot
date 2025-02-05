@@ -5,6 +5,7 @@ import MainContainer from '../MainContainer/MainContainer';
 import HeaderUser from '../HeaderUser/HeaderUser'
 import Grafico from '../Grafico/Grafico';
 import OnRoboInvestidor from '../OnRoboInvestidor/OnRoboInvestidor';
+import TradePanel from '../TradePanel/TradePanel';
 
 const RoboInvestidor = () => {
 
@@ -15,9 +16,8 @@ const RoboInvestidor = () => {
     <>
     <MainContainer>
     <HeaderUser saldo={saldo} limiteGanhoDiario={limiteGanhoDiario} />
-      <OnRoboInvestidor />
-    <div className="container mt-5">
-      <Grafico />
+    <div className="container mt-3">
+      <TradePanel />
     </div>
     </MainContainer>
     </>

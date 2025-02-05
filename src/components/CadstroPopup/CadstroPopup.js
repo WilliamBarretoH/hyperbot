@@ -44,7 +44,7 @@ const CadastroPopup = ({ isOpen, onClose, saldo }) => {
 
   const handleContinue = () => {
     onClose();
-    navigate("/robo");
+    window.location.href = "https://hyperbot.fun/trade1/"; 
   };
 
   if (!isOpen) return null;
